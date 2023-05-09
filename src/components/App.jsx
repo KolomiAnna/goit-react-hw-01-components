@@ -1,6 +1,4 @@
 // import { Test } from './Test';
-// import { Button } from './Button';
-
 
 import Profile from 'components/Profile';
 import user from 'user.json';
@@ -34,6 +32,7 @@ export default function App() {
             stats={user.stats}
         />
         <Statistics
+            title="Upload stats"
             stats={data}
         />
         

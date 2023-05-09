@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import css from 'components/Statistics.module.css';
 
 
-export default function Statistics({ stats }) {
+export default function Statistics({ title, stats }) {
     return (
         <section className={clsx(css["statistics"])}>
-            <h2 className={clsx(css["title"])}>Upload stats</h2>
+            <h2 className={clsx(css["title"])}>{title}</h2>
             <ul className={clsx(css["stat-list"])}>
                 {stats.map(({ id, label, percentage }) => {
                     return (
