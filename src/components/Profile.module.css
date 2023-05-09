@@ -1,0 +1,82 @@
+
+h1,h2,h3,h4,h5,h6,p{  
+margin: 0;
+}
+
+ul,ol {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+img{
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+
+.profile{
+width: 50%;
+margin: 30px auto;
+
+box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
+  -2px 0px 4px rgba(0, 0, 0, 0.08),
+  -1px 0px 3px rgba(0, 0, 0, 0.16);
+}
+
+.description{
+background-color: #ffffff;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+padding: 40px 0;
+}
+
+.avatar{
+border-radius: 50%;
+width: 300px;
+}
+
+.name {
+font-weight: 700;
+font-size: 28px;
+}
+
+.tag, .location {
+font-weight: 400;
+font-size: 22px;
+color: #555555;
+}
+
+
+.stats{
+background-color: #F0F8FF;
+display: flex;
+}
+
+.stats > li{
+border: 1px solid #a4a2a2;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 5px;
+flex-basis: calc(100% / 3);
+padding: 20px 0;
+}
+
+
+.label{
+font-weight: 400;
+font-size: 18px;
+color: #555555;
+}
+
+.quantity{
+font-weight: 700;
+font-size: 22px;
+}

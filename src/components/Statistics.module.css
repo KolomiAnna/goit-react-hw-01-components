@@ -1,0 +1,43 @@
+.statistics{
+width: 50%;
+padding-top: 40px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+
+background-color:#ffffff;
+
+box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
+  -2px 0px 4px rgba(0, 0, 0, 0.08),
+  -1px 0px 3px rgba(0, 0, 0, 0.16);
+}
+
+.title{
+font-weight: 700;
+font-size: 22px;
+text-transform: uppercase;
+color: #555555;
+text-align:center;
+
+padding-bottom: 40px;
+}
+
+.stat-list{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.item{
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+flex-basis: calc(100% / 5);
+padding: 15px 0;
+color: #ffffff;
+}
+
+.percentage{
+    font-size: 26px;
+}
