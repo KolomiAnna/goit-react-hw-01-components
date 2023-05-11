@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 
-import css from 'components/TransactionHistory.module.css';
+import css from 'components/transactionHistory/TransactionHistory.module.css';
 
 export default function TransactionHistory({ items }) {
     return (
@@ -28,9 +28,13 @@ export default function TransactionHistory({ items }) {
         </table>
 )}
 
+
+
 TransactionHistory.propTypes = {
-    id: PropTypes.string,
-    type: PropTypes.string,
-    amount: PropTypes.number,
-    currency: PropTypes.string,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        currency: PropTypes.string.isRequired,
+    })).isRequired,
 }

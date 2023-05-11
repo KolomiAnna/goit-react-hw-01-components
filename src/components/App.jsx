@@ -1,18 +1,16 @@
 // import { Test } from './Test';
 
-import Profile from 'components/Profile';
-import user from 'user.json';
+import Profile from 'components/profile/Profile';
+import user from 'data/user.json';
 
-import Statistics from 'components/Statistics';
-import data from 'data.json';
+import Statistics from 'components/statistics/Statistics';
+import data from 'data/data.json';
 
-import FriendList from 'components/FriendList';
-import friends from 'friends.json';
+import FriendList from 'components/friendList/FriendList';
+import friends from 'data/friends.json';
 
-import TransactionHistory from 'components/TransactionHistory';
-import transactions from 'transactions.json'
-
-
+import TransactionHistory from 'components/transactionHistory/TransactionHistory';
+import transactions from 'data/transactions.json'
 
 
 export default function App() {

@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import PropTypes from 'prop-types';
 
-import css from 'components/Statistics.module.css';
+import css from 'components/statistics/Statistics.module.css';
 
 
 export default function Statistics({ title, stats }) {
     return (
         <section className={clsx(css["statistics"])}>
-            <h2 className={clsx(css["title"])}>{title}</h2>
+        {title && <h2 className={clsx(css["title"])}>{title}</h2>}
             <ul className={clsx(css["stat-list"])}>
                 {stats.map(({ id, label, percentage }) => {
                     return (
@@ -27,9 +27,13 @@ function getRandomHexColor() {
 
 
 Statistics.propTypes = {
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.number,
+    title: PropTypes.string,
+
+    stats: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+    })).isRequired,
 }
 
 
