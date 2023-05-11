@@ -4,8 +4,6 @@ import css from 'components/friendList/FriendList.module.css';
 
 
 export default function FriendsItem({ avatar, name, isOnline, id}) {
-    
-    console.log(id);
     return <li key={id} className={clsx(css["item"])}>
         <span className={clsx(css["status"])}
             style={{ backgroundColor: getStatusColor(isOnline) }}
